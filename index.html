@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wankhade Netralaya - Advanced Eye Care Clinic in Akola</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Wankhade Netralaya in Ranpise Nagar, Akola offers advanced eye care, cataract surgery, LASIK treatment, retina care, and pediatric ophthalmology. Trusted specialists, modern equipment, and safe treatments.">
+    <meta name="keywords"
+        content="eye hospital Akola, eye clinic Akola, Wankhade Netralaya, cataract surgery Akola, LASIK Akola, retina care Akola, eye doctor Akola, ophthalmologist Akola">
+    <meta name="author" content="Wankhade Netralaya">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wankhadenetralaya.com/">
+    <meta property="og:title" content="Wankhade Netralaya - Advanced Eye Care Clinic in Akola">
+    <meta property="og:description"
+        content="A trusted name in eye care, offering high-quality cataract, LASIK, retina, glaucoma, and pediatric eye treatments. Visit us in Ranpise Nagar, Akola.">
+    <meta property="og:image" content="./Image For Color Theme Of Website.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Wankhade Netralaya - Advanced Eye Care Clinic in Akola">
+    <meta property="twitter:description"
+        content="Trusted eye care clinic in Akola. Experienced specialists, advanced treatments, and affordable packages.">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="./Image For Color Theme Of Website.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- GSAP for Smooth Scroll & Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <!-- JavaScript Entrypoint -->
+    <script src="./main.js" defer></script>
+
+
+<body>
+
+    <!-- PAGE LOADING SCREEN (PRELOADER) -->
+    <div id="preloader" role="status" aria-label="Loading Website">
+        <div class="preloader-logo-text">Wankhade Netralaya</div>
+        <div class="preloader-loader">
+            <div class="preloader-progress" id="preloader-progress"></div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS INDICATOR -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo-wrapper" id="nav-logo-link">
+                <div class="logo-text">
+                    <span>Wankhade</span>
+                    <span class="logo-sub">Netralaya</span>
+                </div>
+            </a>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#doctors" class="nav-link">Specialists</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Choose Us</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#faq" class="nav-link">FAQs</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#appointment" class="btn btn-secondary"
+                    style="padding: 10px 20px; font-size: 0.9rem; border-radius: var(--radius-sm);">Book Appointment</a>
+                <div class="menu-btn" id="menu-btn" role="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero" aria-label="Introduction">
+            <div class="hero-background-shapes" aria-hidden="true">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge" id="hero-badge">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                        Trusted Eye Care in Akola
+                    </span>
+                    <h1 id="hero-title">Advanced Eye Care With <span class="text-gradient">Trusted Specialists</span>
+                    </h1>
+                    <p id="hero-subtitle">Wankhade Netralaya is a premier eye hospital in Akola dedicated to preserving
+                        and restoring your vision. Experience advanced diagnostics, premium micro-surgeries, and
+                        compassionate treatment tailored to every patient's needs.</p>
+
+                    <div class="hero-ctas">
+                        <a href="#appointment" class="btn btn-primary" id="hero-cta-book">
+                            Book Appointment
+                            <span class="btn-icon">→</span>
+                        </a>
+                        <a href="tel:+918379862010" class="btn btn-secondary" id="hero-cta-call">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="margin-right: 4px;">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
+
+                    <div class="hero-stats-row" id="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-val="15">0</span>
+                            <span class="hero-stat-lbl">Years of Excellence</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-val="25000">0</span>
+                            <span class="hero-stat-lbl">Happy Patients</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num" data-val="10000">0</span>
+                            <span class="hero-stat-lbl">Successful Surgeries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container" id="hero-image-block">
+                    <div class="hero-image-wrapper">
+                        <img src="./DrCouple.jpeg"
+                            alt="Dr. Nilesh Wankhade and Dr. Neha Wankhade of Wankhade Netralaya">
+                    </div>
+
+                    <!-- Floating Widget 1 -->
+                    <div class="floating-widget widget-specialist">
+                        <div class="widget-avatar">WN</div>
+                        <div class="widget-info">
+                            <h4>Expert Surgeons</h4>
+                            <p>Super Specialized Care</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Widget 2 -->
+                    <div class="floating-widget widget-tech">
+                        <span class="widget-tech-icon">👁</span>
+                        <span class="widget-tech-text">Carl Zeiss Optics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="section-padding" aria-label="About the Hospital">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-layout" id="about-img-container">
+                        <div class="about-img-box">
+                            <img src="./gallery2.png"
+                                alt="Doctor at Wankhade Netralaya performing eye examination">
+                        </div>
+                        <div class="about-experience-badge" id="about-exp-badge">
+                            <div class="about-exp-years">15+</div>
+                            <div class="about-exp-lbl">Years Trusted Experience</div>
+                        </div>
+                    </div>
+
+                    <div class="about-content" id="about-content-block">
+                        <span class="badge">Who We Are</span>
+                        <h3>Dedicated to Bringing Clarity to Your Vision</h3>
+                        <p>Wankhade Netralaya in Ranpise Nagar, Akola is a trusted and dedicated eye clinic offering
+                            high-quality healthcare services to patients of all ages.</p>
+                        <p>The clinic has been a pillar in the eye care sector for many years and is known for providing
+                            advanced eye treatments, surgeries, and compassionate patient care. Supported by highly
+                            experienced ophthalmologists and healthcare professionals who prioritize patient comfort, we
+                            create a warm, welcoming, and safe environment for diagnostics and recovery.</p>
+                        <p>Located conveniently in Ranpise Nagar, Akola, the hospital is easily accessible for patients
+                            from nearby towns and cities across the region.</p>
+
+                        <div class="about-features">
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <span class="about-feat-text">Experienced Specialists</span>
+                            </div>
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <span class="about-feat-text">Modern Equipment</span>
+                            </div>
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <span class="about-feat-text">Safe Treatments</span>
+                            </div>
+                            <div class="about-feat-item">
+                                <div class="about-feat-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <span class="about-feat-text">Affordable Care Packages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SERVICES SECTION -->
+        <section id="services" class="section-padding bg-gradient-radial" aria-label="Our Specialities">
+            <div class="container">
+                <div class="section-header" id="services-header">
+                    <span class="badge">Our Services</span>
+                    <h2>Comprehensive Eye Care Solutions</h2>
+                    <p>We provide advanced treatment packages tailored to different patient needs and budgets, utilizing
+                        cutting-edge ophthalmic techniques.</p>
+                </div>
+
+                <div class="services-grid" id="services-grid-block">
+                    <!-- Service 1 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                            <h3>Cataract Surgery</h3>
+                            <p>Advanced sutureless Phacoemulsification surgery with premium intraocular lens (IOL)
+                                implantation for rapid recovery and crystal-clear vision.</p>
+                            <a href="#appointment" class="service-link">
+                                Enquire Now
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <!-- LASIK Laser SVG -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 3h12M6 21h12M12 3v18M5 12h14" />
+                            </svg>
+                        </div>
+                        <h3>LASIK Treatment</h3>
+                        <p>Freedom from glasses and contact lenses with high-precision laser vision correction, offering
+                            immediate results and minimal discomfort.</p>
+                        <a href="#appointment" class="service-link">
+                            Enquire Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <!-- Retina SVG -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a10 10 0 1 0 10 10H12V2Z" />
+                                <path d="M12 2a10 10 0 0 1 10 10h-2a8 8 0 0 0-8-8V2Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                        </div>
+                        <h3>Retina Care</h3>
+                        <p>Specialized diagnosis and management of retinal disorders including Diabetic Retinopathy,
+                            Macular Degeneration, and retinal tears.</p>
+                        <a href="#appointment" class="service-link">
+                            Enquire Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <!-- Glaucoma SVG -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" />
+                            </svg>
+                        </div>
+                        <h3>Glaucoma Treatment</h3>
+                        <p>Prevent vision loss with early detection, intraocular pressure monitoring, and advanced
+                            medical or surgical therapies.</p>
+                        <a href="#appointment" class="service-link">
+                            Enquire Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <!-- Pediatric SVG -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Pediatric Eye Care</h3>
+                        <p>Gentle and friendly vision checkups for children. Early screening and management for lazy eye
+                            (amblyopia), squint, and refractive errors.</p>
+                        <a href="#appointment" class="service-link">
+                            Enquire Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card glass-panel">
+                        <div class="service-icon-box">
+                            <!-- Checkup SVG -->
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                <path d="M6 6h10M6 10h10" />
+                            </svg>
+                        </div>
+                        <h3>General Eye Checkup</h3>
+                        <p>Routine comprehensive eye examinations utilizing computerized diagnostics to check overall
+                            visual health and prescription changes.</p>
+                        <a href="#appointment" class="service-link">
+                            Enquire Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. DOCTORS SECTION -->
+        <section id="doctors" class="section-padding doctors-section" aria-label="Our Specialists">
+            <div class="container">
+                <div class="section-header" id="doctors-header">
+                    <span class="badge">Our Specialists</span>
+                    <h2>Meet Our Experienced Doctors</h2>
+                    <p>Wankhade Netralaya is led by top-tier ophthalmologists dedicated to delivering clinical
+                        brilliance and compassionate healthcare.</p>
+                </div>
+
+                <div class="doctors-grid" id="doctors-grid-block">
+
+                    <!-- Doctor 1: Dr. Nilesh Wankhade -->
+                    <article class="doctor-card" id="doc-card-1">
+                        <div class="doctor-img-box">
+                            <img src="./DrNelish.png" alt="Dr. Nilesh Wankhade - Cataract & Phaco Surgeon"
+                                style="object-position: 50% 8%;">
+                            <div class="doctor-img-overlay"></div>
+                            <div class="doctor-img-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                                Verified Specialist
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-tag">Cataract &amp; LASIK</div>
+                            <h3 class="doctor-name">Dr. Nilesh Wankhade</h3>
+                            <p class="doctor-title">Senior Ophthalmic Surgeon &amp; Phaco Specialist</p>
+                            <p class="doctor-desc">An expert with over 15 years of experience, specializing in advanced stitchless cataract surgery (Phacoemulsification) and refractive vision correction.</p>
+                            <div class="doctor-expertise">
+                                <span class="expertise-chip">Cataract Surgery</span>
+                                <span class="expertise-chip">Phacoemulsification</span>
+                                <span class="expertise-chip">LASIK</span>
+                            </div>
+                            <div class="doctor-card-footer">
+                                <a href="tel:+918379862010" class="doctor-cta-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    Book Appointment
+                                </a>
+                                <a href="https://maps.app.goo.gl/kWb8eQwVvfbGZyHs7" target="_blank" rel="noopener" class="doctor-map-btn" aria-label="View on Google Maps">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Doctor 2: Dr. Neha Wankhade -->
+                    <article class="doctor-card" id="doc-card-2">
+                        <div class="doctor-img-box">
+                            <img src="./DrNeha.png" alt="Dr. Neha Wankhade - Retina & Pediatric Specialist"
+                                style="object-position: 50% 8%;">
+                            <div class="doctor-img-overlay"></div>
+                            <div class="doctor-img-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                                Verified Specialist
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <div class="doctor-tag">Retina &amp; Pediatric</div>
+                            <h3 class="doctor-name">Dr. Neha Wankhade</h3>
+                            <p class="doctor-title">Consultant Ophthalmologist, Retina &amp; Pediatric Care</p>
+                            <p class="doctor-desc">Super specialized in diagnosing medical retina conditions, glaucoma management, pediatric eye diseases, and early childhood vision development solutions.</p>
+                            <div class="doctor-expertise">
+                                <span class="expertise-chip">Retina Care</span>
+                                <span class="expertise-chip">Glaucoma</span>
+                                <span class="expertise-chip">Pediatric Eye</span>
+                            </div>
+                            <div class="doctor-card-footer">
+                                <a href="tel:+918379862010" class="doctor-cta-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    Book Appointment
+                                </a>
+                                <a href="https://maps.app.goo.gl/kWb8eQwVvfbGZyHs7" target="_blank" rel="noopener" class="doctor-map-btn" aria-label="View on Google Maps">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. WHY CHOOSE US SECTION -->
+        <section id="why-choose-us" class="section-padding why-section" aria-label="Core Advantages">
+            <div class="container">
+                <div class="section-header" id="why-header">
+                    <span class="badge">Why Choose Us</span>
+                    <h2>Trust Wankhade Netralaya For Your Eyes</h2>
+                    <p>We combine surgical expertise with clinical technology to provide optimal care, ensuring safety,
+                        accuracy, and comfort.</p>
+                </div>
+
+                <div class="why-grid" id="why-grid-block">
+                    <!-- Point 1 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Experienced Specialists</h3>
+                        <p>Dedicated ophthalmologists with sub-specialty qualifications in complex eye procedures and
+                            cataract surgeries.</p>
+                    </div>
+
+                    <!-- Point 2 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>Modern Technology</h3>
+                        <p>Equipped with sophisticated diagnostic tools and high-precision laser machinery to deliver
+                            micro-treatment accuracy.</p>
+                    </div>
+
+                    <!-- Point 3 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <h3>Safe & Sterile Procedures</h3>
+                        <p>Strictly controlled, state-of-the-art sterile modular operation theaters following strict
+                            global surgical standards.</p>
+                    </div>
+
+                    <!-- Point 4 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M12 4v16M2 12h20" />
+                            </svg>
+                        </div>
+                        <h3>Patient Comfort</h3>
+                        <p>A relaxing clinic layout designed with comforting amenities, short wait times, and friendly
+                            healthcare staff.</p>
+                    </div>
+
+                    <!-- Point 5 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                        </div>
+                        <h3>Affordable Care</h3>
+                        <p>Highly competitive pricing structures and tailored surgery packages to match budgets without
+                            compromising quality.</p>
+                    </div>
+
+                    <!-- Point 6 -->
+                    <div class="why-card glass-panel">
+                        <div class="why-card-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3>Trusted Eye Care</h3>
+                        <p>A leading and highly rated ophthalmic reference center that has cared for thousands of
+                            patients across Akola district.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TESTIMONIAL SECTION -->
+        <section id="testimonials" class="section-padding testimonials" aria-label="Patient Feedback">
+            <div class="container">
+                <div class="section-header" id="testimonials-header">
+                    <span class="badge">Patient Testimonials</span>
+                    <h2>What Our Patients Say</h2>
+                    <p>Real stories of restored vision and clinical care from patients who trusted Wankhade Netralaya.
+                    </p>
+                </div>
+
+                <div class="testimonial-slider-container" id="testimonial-slider">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel">
+                                <div class="testimonial-stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+                                <blockquote class="testimonial-quote">"Wankhade Netralaya is outstanding! My father
+                                    underwent cataract surgery here. The surgery was completely painless, and his vision
+                                    was fully restored the very next day. The doctors are highly compassionate and
+                                    experienced."</blockquote>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar">RP</div>
+                                    <div class="testimonial-meta">
+                                        <h4>Rajesh Patil</h4>
+                                        <p>Akola, Maharashtra</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel">
+                                <div class="testimonial-stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+                                <blockquote class="testimonial-quote">"I had LASIK eye surgery at this clinic to get rid
+                                    of my high-power glasses. The staff explained the whole procedure beautifully. It
+                                    was quick, advanced, and now I have perfect 20/20 vision! Thank you Dr. Nilesh
+                                    Wankhade."</blockquote>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar">AS</div>
+                                    <div class="testimonial-meta">
+                                        <h4>Amit Sharma</h4>
+                                        <p>Ranpise Nagar, Akola</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card glass-panel">
+                                <div class="testimonial-stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+                                <blockquote class="testimonial-quote">"Superb experience. We came for pediatric eye care
+                                    for my 6-year-old daughter. Dr. Neha was very patient and handled the checkup
+                                    beautifully. Highly recommend Wankhade Netralaya for families."</blockquote>
+                                <div class="testimonial-profile">
+                                    <div class="testimonial-avatar">PJ</div>
+                                    <div class="testimonial-meta">
+                                        <h4>Priya Joshi</h4>
+                                        <p>Washim, Maharashtra</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Navigation Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="slider-dots" id="slider-dots"></div>
+                        <button class="slider-btn" id="slider-next" aria-label="Next testimonial">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GALLERY SECTION -->
+        <section id="gallery" class="section-padding bg-gradient-radial" aria-label="Hospital Gallery">
+            <div class="container">
+                <div class="section-header" id="gallery-header">
+                    <span class="badge">Our Gallery</span>
+                    <h2>A Glimpse Into Our Clinic</h2>
+                    <p>Explore images of our state-of-the-art facility, surgical instruments, and client consultations.
+                    </p>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid-block">
+                    <!-- Gallery Item 1: Eye Surgery -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="View eye surgery image"
+                        data-img="./gallery1.png"
+                        data-caption="Advanced Eye Surgery at Wankhade Netralaya">
+                        <img src="./gallery1.png"
+                            alt="Eye surgery being performed at Wankhade Netralaya">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Advanced Surgery</h4>
+                                <p>Precision micro-surgical procedures</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2: Slit Lamp Examination -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="View slit lamp examination image"
+                        data-img="./gallery2.png"
+                        data-caption="Slit Lamp Eye Examination">
+                        <img src="./gallery2.png"
+                            alt="Doctor performing slit lamp examination on patient">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Slit Lamp Checkup</h4>
+                                <p>Thorough diagnostic examination</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3: Trial Frame Eye Test -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="View eye power test image"
+                        data-img="./gallery3.png"
+                        data-caption="Vision Correction & Power Testing">
+                        <img src="./gallery3.png"
+                            alt="Eye power testing with trial frame at Wankhade Netralaya">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Vision Testing</h4>
+                                <p>Accurate spectacle power evaluation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4: Retina Close-up -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="View retina examination image"
+                        data-img="./gallery4.png"
+                        data-caption="Retina Examination & Diagnosis">
+                        <img src="./gallery4.png"
+                            alt="Close up retina examination at Wankhade Netralaya">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Retina Diagnosis</h4>
+                                <p>Advanced retinal imaging & care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5: Dr. Nilesh -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="Dr. Nilesh Wankhade"
+                        data-img="./DrNelish.png"
+                        data-caption="Dr. Nilesh Wankhade - Senior Ophthalmic Surgeon">
+                        <img src="./DrNelish.png"
+                            alt="Dr. Nilesh Wankhade Senior Ophthalmic Surgeon">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Dr. Nilesh Wankhade</h4>
+                                <p>Senior Ophthalmic & Phaco Surgeon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6: Doctors Together -->
+                    <div class="gallery-item" role="button" aria-haspopup="dialog"
+                        aria-label="View our specialist doctors image"
+                        data-img="./DrCouple.jpeg"
+                        data-caption="Dr. Nilesh & Dr. Neha Wankhade – Founders">
+                        <img src="./DrCouple.jpeg"
+                            alt="Dr. Nilesh Wankhade and Dr. Neha Wankhade at Wankhade Netralaya">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Our Specialists</h4>
+                                <p>Dedicated to your eye health</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX ELEMENT FOR GALLERY -->
+        <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+            <span class="lightbox-close" id="lightbox-close" role="button" aria-label="Close preview">&times;</span>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
+
+        <!-- 8. FAQ SECTION -->
+        <section id="faq" class="section-padding" aria-label="Frequently Asked Questions">
+            <div class="container">
+                <div class="section-header" id="faq-header">
+                    <span class="badge">Got Questions?</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about eye health, examinations, and consultation fees.</p>
+                </div>
+
+                <div class="faq-grid" id="faq-grid-block">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">How often should I visit an eye clinic?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                It is recommended to get an eye examination once every 1–2 years. People who frequently
+                                use screens or have pre-existing conditions like diabetes or high blood pressure should
+                                visit every 6–12 months.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">What eye disease symptoms should I be aware of?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                Visual problems, persistent eye pain, redness, irritation, excessive watering, sudden
+                                blurry vision, flashes of light, floaters, or frequent headaches should be checked by an
+                                ophthalmologist immediately.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">What are eye doctors called?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                Eye doctors who specialize in medical and surgical eye care are called Ophthalmologists.
+                                Those who specialize in vision testing and corrective lenses are called Optometrists.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span class="faq-question">Does Wankhade Netralaya charge consultation fees?</span>
+                            <span class="faq-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="faq-panel">
+                            <div class="faq-content">
+                                Consultation charges may vary depending on the diagnosis and treatment plan needed.
+                                Patients can contact the clinic directly via phone or WhatsApp for specific consultation
+                                fee structures.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. APPOINTMENT SECTION -->
+        <section id="appointment" class="section-padding appointment" aria-label="Book appointment">
+            <div class="container">
+                <div class="appointment-wrapper">
+                    <div class="appointment-info" id="appointment-info-block">
+                        <span class="badge">Bookings</span>
+                        <h2>Schedule Your Eye Checkup Today</h2>
+                        <p>Take the first step toward visual clarity. Complete our simple appointment form, and our
+                            coordinator will confirm your time slot shortly.</p>
+
+                        <div class="appointment-features-list">
+                            <div class="appointment-feature-point">
+                                <div class="ap-point-icon" aria-hidden="true">✓</div>
+                                <div class="ap-point-text">
+                                    <h4>Fast Scheduling</h4>
+                                    <p>Select your desired date and send a booking request in seconds.</p>
+                                </div>
+                            </div>
+                            <div class="appointment-feature-point">
+                                <div class="ap-point-icon" aria-hidden="true">✓</div>
+                                <div class="ap-point-text">
+                                    <h4>Personal Coordinator</h4>
+                                    <p>Our receptionist will call or WhatsApp you directly to confirm slots.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-form-card glass-panel" id="appointment-form-block">
+                        <form class="appointment-form" id="appointment-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-input" placeholder=" " required
+                                    autocomplete="name">
+                                <label for="form-name" class="form-label">Full Name</label>
+                            </div>
+
+                            <div class="form-group-grid">
+                                <div class="form-group">
+                                    <input type="tel" id="form-phone" class="form-input" placeholder=" " required
+                                        autocomplete="tel">
+                                    <label for="form-phone" class="form-label">Phone Number</label>
+                                </div>
+                                <div class="form-group">
+                                    <select id="form-service" class="form-select" required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="General Eye Checkup">General Eye Checkup</option>
+                                        <option value="Cataract Surgery">Cataract Surgery</option>
+                                        <option value="LASIK Treatment">LASIK Treatment</option>
+                                        <option value="Retina Care">Retina and Glaucoma</option>
+                                        <option value="Pediatric Eye Care">Pediatric Eye Care</option>
+                                    </select>
+                                    <label for="form-service" class="form-label">Preferred Care</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="date" id="form-date" class="form-input" placeholder=" " required>
+                                <label for="form-date" class="form-label">Preferred Date</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-textarea" placeholder=" "></textarea>
+                                <label for="form-message" class="form-label">Describe your symptoms (Optional)</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="btn-submit-appointment">
+                                Request Appointment
+                                <span class="btn-icon">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CONTACT SECTION -->
+        <section id="contact" class="section-padding" aria-label="Contact details">
+            <div class="container">
+                <div class="section-header" id="contact-header">
+                    <span class="badge">Get in Touch</span>
+                    <h2>Contact Wankhade Netralaya</h2>
+                    <p>We are conveniently located in Akola and accessible for patients from all nearby regions.</p>
+                </div>
+
+                <div class="contact-grid" id="contact-grid-block">
+                    <div class="contact-info-panel">
+                        <div class="contact-details-list">
+                            <!-- Detail 1 -->
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <!-- Map-pin SVG -->
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Hospital Address</h4>
+                                    <p>Jawahar Nagar Rd, near Maharashtra Bank, Ranpise Nagar, Akola, Maharashtra 444001
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Detail 2 -->
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <!-- Phone SVG -->
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone / Call Helpline</h4>
+                                    <p><a href="tel:+918379862010">+91 8379862010</a></p>
+                                </div>
+                            </div>
+
+                            <!-- Detail 3 -->
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <!-- Clock SVG -->
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Clinic Timings</h4>
+                                    <p>Monday - Saturday: 10:00 AM to 7:00 PM</p>
+                                    <p>Sunday: Emergency Only</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta-buttons" style="display: flex; gap: 16px;">
+                            <a href="https://maps.app.goo.gl/kWb8eQwVvfbGZyHs7" target="_blank" rel="noopener"
+                                class="btn btn-secondary" style="flex: 1;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" style="margin-right: 4px;">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                Google Maps
+                            </a>
+                            <a href="https://wa.me/918379862010?text=Hi%20Wankhade%20Netralaya%20Team%2C%20I%20want%20to%20enquire%20about%20eye%20care%20treatments."
+                                target="_blank" rel="noopener" class="btn btn-primary"
+                                style="flex: 1; background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); border: 0; box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);">
+                                WhatsApp Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper" id="contact-map-block">
+                        <!-- Embedded Google Map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.4005086884613!2d77.00030587604323!3d20.704128598516086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd72fea86a233b9%3A0xb6906f3661be4628!2sWankhade%20Netralaya!5e0!3m2!1sen!2sin!4v1716301389712!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Google Map location of Wankhade Netralaya"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#hero" class="logo-wrapper">
+                    <img src="./logo.png" alt="Wankhade Netralaya Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span>Wankhade</span>
+                        <span class="logo-sub">Netralaya</span>
+                    </div>
+                </a>
+                <p class="footer-desc">Wankhade Netralaya is a dedicated eye clinic in Akola offering high-quality
+                    ophthalmic surgeries, laser treatments, and patient care with experienced specialists.</p>
+                <div class="footer-social-row">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook"><svg width="18" height="18"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg></a>
+                    <a href="https://maps.app.goo.gl/kWb8eQwVvfbGZyHs7" class="footer-social-icon"
+                        aria-label="Google Business Profile"><svg width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114A5.94 5.94 0 0 1 8 12.576a5.94 5.94 0 0 1 5.99-5.938c1.55 0 2.97.585 4.05 1.548l3.113-3.113A10.15 10.15 0 0 0 13.99 1.5 10.24 10.24 0 0 0 3.75 11.74a10.24 10.24 0 0 0 10.24 10.24c5.73 0 10.203-4.015 10.203-10.203 0-.616-.068-1.2-.185-1.742H12.24Z" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Hospital</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#doctors">Meet Specialists</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Contact Details</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <!-- Pin Icon -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>Jawahar Nagar Rd, near Maharashtra Bank, Ranpise Nagar, Akola, Maharashtra 444001</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <!-- Phone Icon -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span><a href="tel:+918379862010" style="color: inherit;">+91 8379862010</a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <!-- Clock Icon -->
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span>Mon - Sat: 10:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Wankhade Netralaya. All Rights Reserved. Designed with Clinical Excellence.</p>
+            <p>
+                <a href="#hero" style="margin-right: 15px;">Back to Top</a>
+                <a href="#appointment">Bookings</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY CTA BUTTONS -->
+    <div class="mobile-sticky-ctas" id="mobile-ctas" role="complementary" aria-label="Mobile quick actions">
+        <a href="tel:+918379862010" class="sticky-btn sticky-btn-call" id="sticky-call">
+            <!-- Phone SVG -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call Now
+        </a>
+        <a href="https://wa.me/918379862010?text=Hi%20Wankhade%20Netralaya%20Team%2C%20I%20want%20to%20enquire%20about%20eye%20care%20treatments."
+            target="_blank" rel="noopener" class="sticky-btn sticky-btn-whatsapp" id="sticky-whatsapp">
+            <!-- WhatsApp Logo SVG -->
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.335 4.978L2 22l5.197-1.36a9.944 9.944 0 0 0 4.814 1.245h.004c5.507 0 9.991-4.479 9.992-9.986.002-2.668-1.037-5.176-2.927-7.067C17.195 2.941 14.685 2.001 12.012 2zm5.726 14.12c-.253.712-1.462 1.307-2.014 1.388-.501.072-1.155.132-3.354-.78-2.811-1.165-4.629-4.014-4.77-4.2a4.9 4.9 0 0 1-1.025-2.613c0-1.52.793-2.261 1.081-2.553.253-.255.66-.372.962-.372.102 0 .193.005.275.009.243.012.366.028.527.352.203.407.693 1.688.753 1.81.061.121.101.263.02.425-.08.162-.122.263-.243.405-.121.142-.254.316-.364.425-.122.12-.249.252-.108.495.141.243.626 1.03 1.343 1.667.925.82 1.702 1.074 1.944 1.196.243.12.385.101.527-.061.142-.162.607-.709.77-1.02.162-.311.324-.263.546-.182.222.081 1.41.664 1.652.785.243.12.405.182.466.283.061.101.061.587-.192 1.3zm0 0" />
+            </svg>
+            WhatsApp
+        </a>
+    </div>
+
+</body>
+
+</html>
