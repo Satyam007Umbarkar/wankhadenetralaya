@@ -32,6 +32,17 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./style.css">
+    <!-- GSAP Visibility Fallback -->
+    <style>
+    .service-card, .doctor-card, .why-card, .gallery-item, .faq-item,
+    #about-img-container, #about-content-block, #services-header, #doctors-header,
+    #why-header, #why-grid-block, #testimonials-header, #testimonial-slider,
+    #gallery-header, #faq-header, .contact-info-panel, #contact-map-block,
+    #appointment-info-block, #appointment-form-block, #contact-header {
+        opacity: 1;
+        transform: none;
+    }
+    </style>
 
     <!-- GSAP for Smooth Scroll & Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
@@ -41,6 +52,7 @@
     <script src="./main.js" defer></script>
 
 
+</head>
 <body>
 
     <!-- PAGE LOADING SCREEN (PRELOADER) -->

@@ -405,9 +405,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Register ScrollTrigger and setup triggers
-        if (typeof ScrollTrigger !== 'undefined') {
-            gsap.registerPlugin(ScrollTrigger);
-            initScrollAnimations();
+        try {
+            if (typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+                initScrollAnimations();
+            }
+        } catch(e) {
+            console.warn('GSAP ScrollTrigger failed:', e);
         }
     }
 
