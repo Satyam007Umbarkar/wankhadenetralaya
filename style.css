@@ -584,6 +584,13 @@ button, input, select, textarea {
     color: var(--primary);
     line-height: 1;
     margin-bottom: 4px;
+    /* Prevent layout shift during counter animation */
+    font-variant-numeric: tabular-nums;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    min-width: 4ch;
+    display: inline-block;
+    white-space: nowrap;
 }
 .hero-stat-lbl {
     font-size: 0.9rem;
@@ -736,80 +743,42 @@ button, input, select, textarea {
     .hero-stats-row {
         justify-content: space-between;
     }
-}
-
-/* ==========================================================================
-   MOBILE HERO — Prevent animation jitter/shaking on load
-   ========================================================================== */
-@media (max-width: 991px) {
-    /* Lock hero content to GPU layer so GSAP transforms don't cause reflow */
-    #hero-badge,
-    #hero-title,
-    #hero-subtitle,
-    .hero-ctas .btn,
-    #hero-stats,
-    #hero-image-block {
-        transform: translateZ(0);
-        -webkit-transform: translateZ(0);
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-    }
-
-    /* Prevent text from being invisible if GSAP hasn't run yet */
-    #hero-badge,
-    #hero-title,
-    #hero-subtitle,
-    .hero-ctas .btn,
-    #hero-stats {
-        opacity: 1 !important;
-        transform: none !important;
-    }
-
-    /* Smaller floating widgets on mobile */
+    /* Shrink floating widgets on mobile so they don't cover the image */
     .floating-widget {
-        padding: 10px 12px;
-        border-radius: 10px;
+        padding: 9px 11px;
     }
-
     .widget-specialist {
-        gap: 8px;
-        left: 4px;
         bottom: 16px;
+        left: 0px;
+        gap: 7px;
     }
     .widget-avatar {
-        width: 30px;
-        height: 30px;
-        font-size: 0.72rem;
+        width: 28px;
+        height: 28px;
+        font-size: 0.65rem;
         flex-shrink: 0;
     }
     .widget-info h4 {
-        font-size: 0.75rem;
-        font-weight: 700;
-    }
-    .widget-info p {
-        font-size: 0.65rem;
-    }
-
-    .widget-tech {
-        gap: 6px;
-        right: 4px;
-        top: 20px;
-    }
-    .widget-tech-icon {
-        font-size: 0.9rem;
-    }
-    .widget-tech-text {
         font-size: 0.72rem;
     }
-}
-
-/* ==========================================================================
-   MOBILE ABOUT EXPERIENCE BADGE — smaller on mobile
-   ========================================================================== */
-@media (max-width: 768px) {
+    .widget-info p {
+        font-size: 0.62rem;
+    }
+    .widget-tech {
+        top: 18px;
+        right: 0px;
+        gap: 6px;
+    }
+    .widget-tech-icon {
+        font-size: 0.85rem;
+    }
+    .widget-tech-text {
+        font-size: 0.7rem;
+    }
+    /* Shrink about experience badge on mobile */
     .about-experience-badge {
         padding: 14px 16px;
-        max-width: 130px;
+        max-width: 140px;
         bottom: -20px;
         right: 10px;
     }

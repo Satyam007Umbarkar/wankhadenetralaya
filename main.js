@@ -249,10 +249,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function initHeroAnimations() {
         if (typeof gsap === 'undefined') return;
 
-        // Run stat counters (always, regardless of device)
+        // Run stat counters
         const statNums = document.querySelectorAll('.hero-stat-num');
         statNums.forEach(num => {
             const targetVal = parseInt(num.getAttribute('data-val'), 10);
+
+            // Pre-set final display text so element reserves its full width
+            // before animation starts — prevents layout shift / shaking
+            if (targetVal >= 1000) {
+                num.textContent = Math.floor(targetVal / 1000) + 'K+';
+            } else {
+                num.textContent = targetVal + '+';
+            }
+
             let obj = { val: 0 };
             gsap.to(obj, {
                 val: targetVal,
@@ -270,11 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Skip entrance animations on mobile to prevent layout-jitter / text shaking
-        // (CSS already ensures elements are visible via opacity:1 !important on mobile)
-        if (window.innerWidth <= 991) return;
-
-        // Hero entrance — desktop only (fromTo, safe because desktop has stable viewport)
+        // Hero entrance — only animate elements that are visible (fromTo, not from)
         const tl = gsap.timeline();
         tl.fromTo('#hero-badge',       { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' })
           .fromTo('#hero-title',        { opacity: 0, y: 30  }, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
