@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function initHeroAnimations() {
         if (typeof gsap === 'undefined') return;
 
-        // Run stat counters
+        // Run stat counters (always, regardless of device)
         const statNums = document.querySelectorAll('.hero-stat-num');
         statNums.forEach(num => {
             const targetVal = parseInt(num.getAttribute('data-val'), 10);
@@ -270,7 +270,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Hero entrance — only animate elements that are visible (fromTo, not from)
+        // Skip entrance animations on mobile to prevent layout-jitter / text shaking
+        // (CSS already ensures elements are visible via opacity:1 !important on mobile)
+        if (window.innerWidth <= 991) return;
+
+        // Hero entrance — desktop only (fromTo, safe because desktop has stable viewport)
         const tl = gsap.timeline();
         tl.fromTo('#hero-badge',       { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' })
           .fromTo('#hero-title',        { opacity: 0, y: 30  }, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')

@@ -739,6 +739,89 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   MOBILE HERO — Prevent animation jitter/shaking on load
+   ========================================================================== */
+@media (max-width: 991px) {
+    /* Lock hero content to GPU layer so GSAP transforms don't cause reflow */
+    #hero-badge,
+    #hero-title,
+    #hero-subtitle,
+    .hero-ctas .btn,
+    #hero-stats,
+    #hero-image-block {
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+
+    /* Prevent text from being invisible if GSAP hasn't run yet */
+    #hero-badge,
+    #hero-title,
+    #hero-subtitle,
+    .hero-ctas .btn,
+    #hero-stats {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    /* Smaller floating widgets on mobile */
+    .floating-widget {
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+
+    .widget-specialist {
+        gap: 8px;
+        left: 4px;
+        bottom: 16px;
+    }
+    .widget-avatar {
+        width: 30px;
+        height: 30px;
+        font-size: 0.72rem;
+        flex-shrink: 0;
+    }
+    .widget-info h4 {
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+    .widget-info p {
+        font-size: 0.65rem;
+    }
+
+    .widget-tech {
+        gap: 6px;
+        right: 4px;
+        top: 20px;
+    }
+    .widget-tech-icon {
+        font-size: 0.9rem;
+    }
+    .widget-tech-text {
+        font-size: 0.72rem;
+    }
+}
+
+/* ==========================================================================
+   MOBILE ABOUT EXPERIENCE BADGE — smaller on mobile
+   ========================================================================== */
+@media (max-width: 768px) {
+    .about-experience-badge {
+        padding: 14px 16px;
+        max-width: 130px;
+        bottom: -20px;
+        right: 10px;
+    }
+    .about-exp-years {
+        font-size: 1.8rem;
+    }
+    .about-exp-lbl {
+        font-size: 0.7rem;
+    }
+}
+
+/* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 .about-grid {
