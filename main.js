@@ -249,36 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function initHeroAnimations() {
         if (typeof gsap === 'undefined') return;
 
-        // Run stat counters
-        const statNums = document.querySelectorAll('.hero-stat-num');
-        statNums.forEach(num => {
-            const targetVal = parseInt(num.getAttribute('data-val'), 10);
-
-            // Pre-set final display text so element reserves its full width
-            // before animation starts — prevents layout shift / shaking
-            if (targetVal >= 1000) {
-                num.textContent = Math.floor(targetVal / 1000) + 'K+';
-            } else {
-                num.textContent = targetVal + '+';
-            }
-
-            let obj = { val: 0 };
-            gsap.to(obj, {
-                val: targetVal,
-                duration: 2,
-                ease: 'power2.out',
-                onUpdate: () => {
-                    if (targetVal >= 1000) {
-                        num.textContent = obj.val >= 1000
-                            ? Math.floor(obj.val / 100) / 10 + 'K+'
-                            : Math.floor(obj.val) + '+';
-                    } else {
-                        num.textContent = Math.floor(obj.val) + '+';
-                    }
-                }
-            });
-        });
-
         // Hero entrance — only animate elements that are visible (fromTo, not from)
         const tl = gsap.timeline();
         tl.fromTo('#hero-badge',       { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' })
